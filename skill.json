@@ -1,0 +1,31 @@
+{
+  "name": "genpark-industrial-vision-inspection-agent-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Industrial computer vision defect detection and assembly quality inspection agent.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "industrial-vision",
+    "defect-detection",
+    "quality-control",
+    "ph-july23"
+  ],
+  "inputs": {
+    "image_frame_url": {
+      "type": "string"
+    },
+    "defect_threshold": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "defects_detected": {
+      "type": "array"
+    },
+    "pass_inspection": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
